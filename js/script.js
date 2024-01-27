@@ -36,19 +36,23 @@ const number0fFilms = prompt (`Сколько фильмов вы уже пом�
 // }
 // console.log(obj.Movies);
 // console.log(obj.Count);
-const personalMovieDB = {
-    count: number0fFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
 const 
 a = prompt(`Фильм?`, ``),
 b = prompt(`Оценка?`, ``),
 c = prompt(`Фильм?`, ``),
 d = prompt(`оценка`,``);
+
+const personalMovieDB = {
+    count: number0fFilms,
+    movies: {
+        a: b,
+        c: d
+    },
+    actors: {},
+    genres: [],
+    privat: false
+};
 personalMovieDB.count
-personalMovieDB.movies[a]
-personalMovieDB.movies[c]
+personalMovieDB.movies["a"]
+personalMovieDB.movies["c"]
 console.log(personalMovieDB);
