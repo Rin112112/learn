@@ -43,7 +43,8 @@ const personalMovieDB = {
     genres: [],
     privat: false
 };
-const a = prompt(`Фильм?`, ``),
+const 
+a = prompt(`Фильм?`, ``),
 b = prompt(`Оценка?`, ``),
 c = prompt(`Фильм?`, ``),
 d = prompt(`оценка`,``);
