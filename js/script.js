@@ -44,15 +44,12 @@ d = prompt(`оценка`,``);
 
 const personalMovieDB = {
     count: number0fFilms,
-    movies: {
-        a: b,
-        c: d
-    },
+    movies: {},
     actors: {},
     genres: [],
     privat: false
 };
-personalMovieDB.count
-personalMovieDB.movies["a"]
-personalMovieDB.movies["c"]
+personalMovieDB.count;
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 console.log(personalMovieDB);
