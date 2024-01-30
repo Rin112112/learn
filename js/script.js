@@ -19,7 +19,16 @@
 //     decr--;
 //     console.log(incr);
 //     console.log(decr);-->
-let number0fFilms; 
+let number0fFilms;
+
+const personalMovieDB = {
+    count: number0fFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: true
+}; 
+
 function start() {
     number0fFilms = prompt (`Сколько фильмов вы уже помиотрели?`, ``);
    
@@ -30,6 +39,19 @@ function start() {
 }
 start();
 console.log(number0fFilms);
+
+function showMyDB (hidden) {
+    if (!hidden){
+        console.log(personalMovieDB);
+    }
+}
+showMyDB (personalMovieDB.privat);
+
+function writeYourGenres () {
+    for (let i = 1; i <= 3; i++)
+    personalMovieDB.genres[i - 1] = prompt (`Любимый жанр номер ${i}`);
+}
+writeYourGenres();
 // const answer = [];
 // answer[0] = prompt (`последний фильм?`, ``);
 // answer[1] = prompt (`последний фильм?`, ``);
@@ -51,13 +73,6 @@ console.log(number0fFilms);
 // c = prompt(`Фильм?`, ``),
 // d = prompt(`оценка`,``);
 
-const personalMovieDB = {
-    count: number0fFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
-};
 // personalMovieDB.count;
 // personalMovieDB.movies[a] = b;
 // personalMovieDB.movies[c] = d;
@@ -79,30 +94,29 @@ const personalMovieDB = {
 //         alert(`ЗБС`)
 //         break;
 //     };
-// for (let i = 0; i < 2; i++) {
-//     const 
-// a = prompt(`Фильм?`, ``),
-// b = prompt(`Оценка?`, ``);
-//     if (a != null && b != null && a != `` && b != `` && a.length < 50){
-//         personalMovieDB.movies[a] = b;
-//         console.log(`done`);
-//     }
-//     else {
-//         console.log(`error`);
-//         --i;
-//     }
-// }
-// if (personalMovieDB.count < 10 && personalMovieDB.count > 0) {
-//     alert(`Мало`);
-// }
-// else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
-//     alert(`норм`);
+for (let i = 0; i < 2; i++) {
+    const 
+a = prompt(`Фильм?`, ``),
+b = prompt(`Оценка?`, ``);
+    if (a != null && b != null && a != `` && b != `` && a.length < 50){
+        personalMovieDB.movies[a] = b;
+        console.log(`done`);
+    }
+    else {
+        console.log(`error`);
+        --i;
+    }
+}
+if (personalMovieDB.count < 10 && personalMovieDB.count > 0) {
+    alert(`Мало`);
+}
+else if (personalMovieDB.count >= 10 && personalMovieDB.count <= 30) {
+    alert(`норм`);
 
-// }
-// else if (personalMovieDB.count >= 30) {
-//     alert (`збс`);
-// }
-// else if (personalMovieDB.count = null && personalMovieDB.count == "") {
-//     alert (`WTF?`);
-// }
-// console.log(personalMovieDB);
+}
+else if (personalMovieDB.count >= 30) {
+    alert (`збс`);
+}
+else if (personalMovieDB.count = null && personalMovieDB.count == "") {
+    alert (`WTF?`);
+}
