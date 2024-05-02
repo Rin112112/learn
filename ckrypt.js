@@ -24,11 +24,34 @@
 // const ans = prompt("zhopa?", "2")
 // console.log(ans);
 
-const answers = [];
+// const answers = [];
 
-answers [0] = prompt("ваше?");
-answers [1] = prompt("имя?");
-answers [2] = prompt("наше?");
-answers [3] = prompt("ихнее?");
+// // answers [0] = prompt("ваше?");
+// // answers [1] = prompt("имя?");
+// // answers [2] = prompt("наше?");
+// // answers [3] = prompt("ихнее?");
 
-document.write(answers);
+// // document.write(answers);
+ 
+// console.log(typeof(answers));
+let number0fFilms;
+
+number0fFilms = prompt("Cколько фильмов вы посмотрели?", "");
+
+let
+ a = prompt("Фильм?", ""),
+ b = prompt("оценка?", ""),
+ c = prompt("Фильм?", ""),
+ d = prompt("оценка?", "");
+
+let personalMovieDB = {
+    count: number0fFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
+};
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
+console.log(number0fFilms);
+console.log(personalMovieDB)
